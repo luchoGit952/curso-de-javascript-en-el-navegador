@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Accent</title>
+  </head>
+
+  
+  <link href="stilos.css" type="text/css"rel="stylesheet">
+  <body>
+    <script>
+      src = "scripts.js";
+
+      console.log(60);
+      console.log(10);
+      console.log(28 + 3.75);
+      console.log(2019 - 1969);
+
+      console.log("hola" + "mundo");
+      console.log("Hola" + " " + "mundo");
+      console.log("Enseñando al mundo a codificar".length);
+      console.log("Ruben".toUpperCase());
+      console.log("  eliminar espacios en blanco  ".trim()); // el metodo trim elimina espacios en blanco
+
+      console.log(Math.random() * 50); // da un numero aleatorio
+      console.log(Math.floor(Math.random() * 100)); // este metodo nos da un numero aleatorio y lo redondea al entero mas cercano
+      console.log(Number.isInteger(2017));
+      console.log(Math.ceil(48.3)); // este metodo  determina si el valor pasado es un entero
+      console.log(Number.isFinite(48.3));
+
+      // uso de variable
+      var comidaFavorita = "Pizza"; // variable var
+      var numeroDeRebanada = 8;
+      console.log(comidaFavorita);
+      console.log(numeroDeRebanada);
+
+      // variable let
+      let cambiarme = true;
+      cambiarme = false;
+      console.log(cambiarme);
+
+      // variable const o constante
+
+      const plato = "enchiladas";
+      console.log(plato);
+      // const plato = 'pepinos';
+      //console.log(ensalada);
+
+      // operadores matematicos
+      let siguienteNivel = 10;
+      let nivelPoder = 1009;
+      let cuarto = 32;
+      let playMe = 200;
+      siguienteNivel += 5;
+      nivelPoder -= 100;
+      cuarto *= 11;
+      playMe /= 4;
+
+      console.log("El valor de siguiente nivel es:", siguienteNivel);
+      console.log("El valor de nivel de poder  es:", nivelPoder);
+      console.log("El valor de cuarto es:", cuarto);
+      console.log("El valor de playMe es:", playMe);
+
+      // operadores de incremento y decremento asignacion
+      let ganador = 10;
+      let jugador = 20;
+      ganador++;
+      jugador--;
+      console.log(ganador);
+      console.log(jugador); 
+
+
+      // operadores de asignacion
+      5 =='5'; // compara valores
+      5=== '5'; // compara valores mas tipo de datos
+      5 !='5';// negacion compara igualdad
+      5 !=='5'; // compara diferencia
+
+
+      // concatenacion (+)
+      var animalFavorito = 'perros';
+      console.log('My animal favorito son los :'+animalFavorito);
+
+    
+    
+    // interpolacion de cadena
+    var myNombre = 'luis';
+    var myCiudad = 'Monteria';
+    console.log(`Mi nombre es ${myNombre} ,mi ciudad fovorita es ${myCiudad}.`);
+
+   // tipo de datos
+   let nuevaVariable = 'Luis';
+   console.log(typeof nuevaVariable);
+   nuevaVariable = 1;
+   console.log(typeof nuevaVariable);
+
+
+
+   // practicando lo aprendido
+   let nombre = 'luis';
+   let apellido = 'Gonzales';
+   let edad = 28;
+   let ciudad = 'Monteria';
+   console.log('Mi nombres es '+nombre+' '+apellido+' '+ 'y bengo de la ciudad de  '+ciudad+'tengo '+edad+' '+'años');
+    console.log(`mi nombres ${nombre}, mi ciudad es${ciudad}`);
+
+  // usando la funcion alert
+    //alert('hola luis');
+
+// usando la funcion prompt
+   // prompt();
+     
+
+     // asignacion por valor o referncia
+    let numero = 50;
+    let numero2 = numero;
+    console.log(numero2);
+    numero2 = 60;
+    console.log(numero2);
+    console.log(numero)
+
+    let usuario1 = "Luis";
+    let usuario2 = usuario1;
+    console.log(usuario2);
+    usuario2 = "Huberley";
+    console.log(usuario2);
+    console.log(usuario1);
+
+    // condicional if else
+    let ventas =  true;
+    ventas = false;
+    if(ventas ){
+      console.log("Hora de comprar");
+
+    }else{
+      console.log("Hora para esperar una venta");
+    }
+
+      // operadores de comparacion
+      let nivelDeHambre = 10;
+      if(nivelDeHambre >=10){
+        console.log("Tengo hambre");
+
+      }else{
+        console.log("Notengo hambre");
+        }
+
+        // operadores logicos
+        let estadoDeAnimo = "sueño";
+        let nivelDeCansancio = 7;
+        if(estadoDeAnimo === "sueño" &&  nivelDeCansancio >  7){
+          console.log("Hora de dormir");
+
+
+        }else{
+          console.log("Aun no es hora de dormir ");
+
+        }
+
+        // verdaero o falso
+        let palabras =0;
+        if(palabras){
+          console.log("Genial.. has comenzado tu trabajo");
+        }else{
+          console.log("Mejor ponte a trabajar");
+        }
+        let fraseFavorita ="sexo";
+        if(fraseFavorita){
+          console.log("Esta cadena no parece estar vacia");
+
+        }else{
+          console.log("Definitivamente esta cadena esta vacia");
+
+        }
+        
+        
+        
+        // asiganacion de verdad o falso ... o corto circuito
+        let herramienta ="";
+        herramienta ="Boligrafo";
+        let utensilio ="herramienta"||"Boligrafo";
+        console.log(`El ${herramienta} es mas poderosa que la espada`);
+     
+      // operadore ternario
+      let estaBloqueado = false;
+      estaBloqueado ? console.log("Necesitara una llave para abrir la puerta "):
+      console.log("No necesitara una llave para abrir la puerta");
+
+      let estaCorrecto = true;
+      estaCorrecto ? console.log("Correcto"):
+      console.log("Incorrecto");
+
+      let palabraFavorita="Me encanta eso";
+    palabraFavorita ==="amo eso "? console.log("Me encanta eso"):
+      console.log("No me gusta eso");
+
+      // condicional else if  
+      let estacion = "Verano";
+      if(estacion === "Primavera"){
+        console.log("¡Es primavera! los arboles esta floreciendo");
+       }else if(estacion ==="Invierno"){
+       console.log("It\s", "de invierno todo esta cubierto de nieve");
+        
+       }else if(estacion ==="otoño"){
+         console.log("¡Esta cayendo! las hojas estan cayendo");
+
+       }else if(estacion ==="Verano"){
+         console.log("Hace sol y calor porque es verano");
+
+       }else{
+         console.log("Temporada invalida");
+
+       }
+    
+   // condicional switch
+   let deportistaFinalPosicion= "Primer lugar";
+   switch(deportistaFinalPosicion){
+     case "Primer lugar": console.log("Usted obtiene la medalla de oro");
+     break;
+
+     case "segundo lugar": console.log("Usted obtiene la medalla de plata");
+     break;
+
+     case "tercer lugar ": console.log("Usted obtiene la medalla de bronze");
+     break;
+     default:
+      console.log("No se otorgo ninguna medalla");
+
+   
+   }
+   // funciones parametros y argumentos
+   function gracias(nombre){// parametros
+     console.log("Gracias por su compra señor "+nombre+" "+"..apreciamos su negocio");
+   }
+   // llamada de la funcion
+  gracias(" Luis ");// argumentos
+   
+   
+   function obtenerPlantas(){
+     console.log("regar las plantas");
+    }
+    obtenerPlantas();
+
+    // paramtros predeterminados
+    function listaDeMercado (item1 = "leche",item2 ="pan",item3="huevos") {
+      console.log(`Recuerde comprar ${item1}`);
+      console.log(`Recuerde comprar ${item2}`);
+      console.log(`Recuerde comprar ${item3}`);
+
+    
+
+      }
+     // return regreso
+    function  cantidadMonitores(filas,columnas){
+     return filas*columnas;
+    }
+    const numeroDeMonitores = cantidadMonitores(5,4);
+    console.log(numeroDeMonitores);
+
+    // funciones auxiliares
+  
+
+
+    function costeDeMonitores(filas ,columnas){
+     return cantidadMonitores (filas,columnas)*200;
+
+    }
+     const totalCosto = costeDeMonitores(5,4)
+     console.log(totalCosto);
+
+     // expresiones de funciones
+     const aguaParaPlantas = function(dia){
+       if(dia === "Miercoles"){
+        return true;
+       }else{
+         return false;
+       }
+
+     }
+      aguaParaPlantas("martes");
+     console.log(aguaParaPlantas("martes"));
+
+
+     //funcion de flecha
+     const aguaParaPeces = (agua)=>{
+       if(agua ==="Domingo"){
+         return false;
+
+       }else{
+        return  true;
+       }
+     } 
+     aguaParaPeces("Lunes");
+     console.log(aguaParaPeces("lunes"));
+
+     // funciones de flecha de cuerpo conciso
+     const comidaParaPlantas = dia => dia ==="Miercoles"? true: false;
+
+     // alcance de una variable 
+     const cyty = "nueva york";
+     const horizonteCity=()=> {
+       let rascaCielos = "Edificio empire state";
+       return "Las estrellas sobre el "+rascaCielos+" "+"en"+" "+cyty;
+     }
+     console.log(horizonteCity());
+    
+     // alcance global variable global
+     const satelite ="La luna";
+     const galaxia ="Via lactea";
+    const estrellas ="estrella del norte";
+    const cieloNocturno =()=> {
+     let estrellas ="Sirio"; // contaminacion de alcance
+      return "Cielo noturno:"+ satelite +","  + galaxia + " y "+ estrellas;
+    
+    }
+    console.log(cieloNocturno());
+    console.log(estrellas);//contaminacion de alcance
+
+    // variables locales o alcance local
+    const luzVisible =()=>{
+      const olas ="Luz de la luna";
+      console.log(olas);
+
+    }
+    luzVisible();
+    //console.log(olas);
+  let number=1;
+  let number2=3;//document.getElementById("titulo").innerHTML=nombre+apellido;
+//Asiagnacion por valor o referencia esto apunta al valor no ala referencia
+// en arrays no cambia la referncea
+let usuario1="luis";
+let usuario2=usuario1;
+let usuario1="luis"
+undefined
+let usuario2=usuario1;
+undefined
+usuario1
+"luis"
+usuario1
+
+    
+    
+    // practicando lo aprendido
+    
+    
+const VisibleLuz=()=>{
+  let luzOlas = "Luz de Luna";
+  let region = "El artico";
+  if(region === " el Artico"){
+    let luzOlas ="Aurora Boreal";
+    console.log(luzOlas);
+     }
+     console.log(luzOlas);
+
+    };
+  VisibleLuz();
+  
+  // creando matrices
+  const hobbies =["Futbol","Peliculas","Comer"];
+  console.log(hobbies);
+
+  // accediendo a un indice o elemnto
+  const dichosFamosos =["La fortuna favorece alos valientes","Una broma es algo muy serio",
+  "Donde hay amor hay vida"];
+  let listaArticulos = dichosFamosos [0];
+  console.log(dichosFamosos[listaArticulos]);
+  console.log(dichosFamosos[0]);
+   console.log(dichosFamosos[1]);
+   console.log(dichosFamosos[2]);
+
+   // Actualizar elementos
+   const listaDeCompras =["Pan","Tomates","Leche"];
+   listaDeCompras [1]="Aguacates";
+   console.log(listaDeCompras);
+
+   // arreglo con let y const
+   let condimentos =["salsa","ajo","tomate","cebolla"];// si se puede reasignar
+   const utensilios=["cuchillo","tenedor","cuchara"];// no se puede reasignar
+   console.log(condimentos.length);
+
+   condimentos [0]="mayo";
+   console.log(condimentos);
+   condimentos=[ "mayo"] ;
+
+    utensilios [3]="palillos";
+   console.log(utensilios);
+  // propiedad length
+  const objetivos =["leer un libro","Correr una marathon","jugar futbol"];
+  console.log(objetivos.length);
+
+
+  // el metodo push()
+  const tareas =["lavar la ropa","reaar las plantas","lavar los platos"];
+  tareas.push("programar una web","sacar al perro");
+  console.log(tareas);
+  // metodo .pop()
+  tareas.pop("sacar al perro");
+  console.log(tareas);
+// otros metodo de la matriz
+  const listaDeAlimentos =["arroz, jugo de naranja","platanos","papas","azucar"];
+   listaDeAlimentos.shift();
+   console.log(listaDeAlimentos);// este metodo elimina el primer elemento del matriz
+
+   listaDeAlimentos.unshift("palomitas de maiz");// este metodo remplaza el elemeto de la primera lista
+   console.log(listaDeCompras);
+
+   listaDeAlimentos.slice(1,4);
+   console.log(listaDeAlimentos);
+     
+   //buscando el indice de un elemento
+    const pastasIndex = listaDeCompras.indexOf("pastas");
+    console.log(pastasIndex);
+
+    // matrices y funciones
+    const concept =["arrys","can","be", "mutated"];
+    function changeArr(newArr){
+      arr[3]="Mutado";
+    };
+   const removeElement = newArr =>{
+    newArr.pop();
+   };
+  removeElement(concept);
+ console.log(concept);
+
+ // matriz anidada
+ const numberCluster=[[1,2],[3,4],[5,6]];
+ const target = numberCluster[2] [1];
+ console.log(target);
+
+ // bucle for
+ for(let contador =5; contador<10;){
+   contador++;
+   console.log(contador);
+
+ };
+ // for hacia atras
+ for(let velero =4; velero >=1;){
+   velero--;
+   console.log(velero);
+ };
+
+
+//recorriendo matrices con un bucle for
+const vacaciones =["paris","francia ","Italia"];
+for(let i =0; i< vacaciones.length ; i++ ){
+  console.log("me encantaria visitar"+vacaciones [i]);
+
+};
+ // bucles for anidados
+ let seguidoresBobs= ["Maria","Jose","Juan","Camila"];
+ let seguidoresLuis =["Maria","Juan","Natalia"];
+  let seguidoresMutuos=[];
+  for(let i = 0; i < seguidoresBobs.length; i++){
+   for(let j = 0; j < seguidoresLuis.length; j++){
+     if(seguidoresBobs [i]=== seguidoresLuis [j]){
+       seguidoresMutuos.push(seguidoresBobs[j]);
+       console.log(seguidoresBobs);
+       console.log(seguidoresLuis);
+       console.log(seguidoresMutuos);
+  
+
+     };
+
+   };
+  };
+
+  //bucle while
+  const tarjetas =["Corazon ", "Espada","Diamante","Club"];
+ let  cartaActual;
+ while(cartaActual !== "Diamante") {
+  cartaActual = tarjetas[Math.floor(Math.random()*4)];
+  console.log(cartaActual);
+
+ };
+ // bucle do..while
+ let azucarNecesaria =5;
+ tazasAñadidas =0;
+ do{
+  tazasAñadidas++
+ }while (tazasAñadidas< azucarNecesaria) {
+   console.log(azucarNecesaria);
+   console.log(tazasAñadidas);
+   
+ }
+ // funciones como datos
+ //const  comprueba = ()=>{
+ // for(comprueba i = 1; i <= 10; i++ ){
+
+   //}
+  // const  is2p2 =checkThatTwoPlusTwoEquals ;
+  // is2p2();
+  // console.log(is2p2.name);
+
+   // funciones con parametros
+   const añadirDos = num => num +2;
+    const tiempoFunctiempoEjecucion = funcPramtro =>{
+      let t1 = fecha.ahora();
+      funcParametro();// llamando la funcion
+      let t2 = fecha.ahora();
+      return t1,t2;
+   // };
+   // const timep2p =checkThatTwoPlusTwoEqualsFourAMillionTimes();
+   // const comprobarSalidaConsitente=(func,val)=>{
+    //  let primerIntento = func (val);
+     // let segundoIntento = func (val);
+     // if(primerIntento=== segundoIntento){
+       //  return primerIntento;
+     // }else{
+      //  return "Esta funcio devolvio resultados inconsitente";
+     // }
+
+
+   };
+  //  comprobarSalidaConsitente();
+
+  // iterdores  iterador .forEach() hace algo y devuelve undefined o indefinido
+  const frutas =["Mangos","papaya" ,"piña","manzana"  ];
+  frutas.forEach(frutas=> console.log(`Quiero comer un ${frutas}.`));
+
+  // metodo .map() devuelve una nueva matriz
+  const animales =["Gallina","Elefante","aveztrus","llama","Lepardo",
+"Ballena","Pulpo","Leon","Conejo","Perro"];
+
+// metodo .findIndex()  en una matriz devolvera el indice
+  //del primer elemento evaluado a true, si no se encuntra findIndex devolvera -1
+const encontarAnimal = animales.findIndex(num=>{
+return animales ==="elefante";
+} );
+const empezarConS = animales.findIndex(animales=>{
+  return animales[0] ==="S"? true:false;
+});
+const mensajeSecreto = animales.map(animales =>[0]);
+console.log(mensajeSecreto.join(" "));
+const numerosGrandes=[100,200,300,400,500];
+
+const numerosPequeños = numerosGrandes.map(num => num/100);
+console.log(numerosPequeños);
+
+// metodo .filter() devuelve una matriz true o false dependiendo del 
+// valor que se le pasa se agregan a una nueva matriz
+
+const randomNumbers =[375,200,3.14,7,13,852];
+const esmallNumbers = randomNumbers.filter(num =>{
+  return num <250;
+});
+  
+const favoriteWords =["Nostalgia","Hiperbole","Ferviente","Esoterico","Sereno"];
+const logFavoriteWords = favoriteWords.filter(palabra=>{
+  return palabra.length > 7;
+})  
+  
+// metodo .reduce() método devuelve un valor único después de iterar a 
+//través de los elementos de una matriz, reduciendo así la matriz.
+ const nuevosNumeros = [1,3,5,7];  
+  const nuevaSuma = nuevosNumeros.reduce((acumulador,valorActual)=>{
+    console.log("El valor del acumulador es :",acumulador);
+    console.log("El valor de valor actual es :",valorActual);
+    return acumulador,valorActual;10
+
+  });
+  
+  console.log(nuevaSuma);
+
+  // objetos , los objetos pueden asignar a variables como culaquier  
+  // tipo de javascript escribimos el nombre del idntificador seguido 
+  // de dos puntos y luego separamos cada valor literal por coma
+  
+  
+  // creando objetos  literales
+
+  let naveRapida ={color:"Silver","tipo de combustible":"Turbo disel"};
+   
+   // accediendo a propiedades con el operador punto (.)
+   let naveSpacial ={
+     homePlanet:"tierra",
+     "misionActiva" : true,
+    // color:"plata",
+    "tipo de combustible" :"turbo",
+     tripulacion : 5
+    // trayectoriaVuelo = ["venus" ,"marte","jupiter"]
+
+   };
+// let tripulacion = naveSpacial.tripulacion;
+ //let trayectoriaVuelo = naveSpacial.trayectoriaVuelo;
+ let propName = "mision activa";
+ let isActive = naveSpacial["misionActiva"];
+ console.log(naveSpacial[propName]);
+
+ // asignacion de propiedad : podemos usar la anotacion de punto o corchetes y 
+ // operador e asignacion para agruegar nuevos valores
+
+ let carro={
+ "tipo de combustible":"gasolina",
+ color: "amarillo",
+ "velocidad":"automatica"
+
+ };
+ carro.color="azul";
+ carro.partes =9;
+ delete carro ["velocidad"];
+
+// asignacion con palabara clave const
+//const bici ={
+ // type :"hammer"
+//}
+//bici ={
+  //type:"colorado"
+//}
+//bici.type ="alien";
+//bici.velocidad = "mat 5";
+
+
+// metodos.. se invocan agruegando el nombre del objeto con el operador punto
+// seguido del nombre del metodo y parentesis
+
+let mensajeOculto = "Ya no deseamos estar en la fiesta es aburrida. Y"+
+"esta sola y estas personas se van";
+let fiesta ={
+  retirar(){
+    console.log(mensajeOculto);
+  },
+  takeOff(){
+    console.log("Estebaan","maria","carlos","dario");
+  }
+}
+fiesta.retirar();
+fiesta.takeOff(); // llamando metodos
+
+// obejtos anidados : un objeto podria tener otro objeto como propiedad
+// que asu ves podria tener un propiedad que es una matriz e incluso mas objetos
+let avion ={
+  pasajeros :[{nombre :"Luis"}],
+  telescopio :{
+    añoConstruido:2019,
+    modelo:2019,
+    longitudFocal:2030
+  },
+  tripulacion :{
+    capitan:{
+nombre:"sandra",
+grado:"Ingeniera Informatica",
+team(){console.log("Tenemos esto")},
+"comidas favoritas":["galletas","pasteles","Dulces","Espinacas"]}
+  }, 
+  motor:{
+    modelo:"Subaru 200xx",
+
+  },
+  nanoElectronica:{
+  computadora:{
+    terabytes:100,
+    monitores :"HD"
+
+  },
+  copiaDeSegurida:{
+   bateria:"Litio",
+   terabytes:50
+  },
+  }
+
+}
+
+// pasar por referencia... esto significa que cuando pasamos una variable a un objeto
+//a una funcion como argumento.. las funciones que cambian las propiedades del objeto
+//en realidad mutan el objeto permanentemente, aun asignadole const
+let energiaVerde = obj=>{
+  obj["tipo de combustible"]="aceite de palma";
+
+}
+let remoto = obj =>{
+  obj.remoto = true;
+}
+energiaVerde(naveSpacial);
+remoto(naveSpacial);
+console.log(naveSpacial);
+
+// recorriendo objetos.. for.. in ejecutara un bloque de codigo dado 
+// para cada propiedad de un objeto
+ let aeronave ={
+   tripulacion :{
+   capitan:{
+     nombre:"lili",
+     grado:"ingeniera informatica",
+     cherrTeam (){
+       console.log("Tienes esto");
+     }
+   },
+   directorGeneral:{
+     nombre:"Dan",
+     grado:"Ingenieria aeroespacial",
+     deAcuerdo(){
+       console.log("¡Estoy de acuerdo, capitan!");
+     },
+     medico:{
+       nombre:"Clementina",
+       grado:"Fisica",
+       anunciar(){
+         console.log(`jets on!`);
+       }
+     },
+      traductor:{
+        nombre:"Shuna",
+        grado:"Ciancia de la conversacion",
+        powerFull(){
+          console.log("¡El tanque esta lleno!");
+        }
+
+      }
+   }
+   }
+
+ };
+
+ //for(let miembroTripulacion aeronave .tripulacion){
+//console.log(`${miembroTripulacion}: ${aeronave.tripulacion[miembroTripulacion].nombre}`);
+ //}
+
+
+
+
+
+//      OBJETOS AVANZADOS..this .. la palabra calve this hace referencia al objeto llamante
+// que proporciona acceso al objeto llamante
+const robot ={
+  modelo:"l2rg3",
+  nivelEnergia:100,
+  info(){
+    return`Soy  ${this.modelo} y mi nivel de energia es ${this.nivelEnergia}.`;
+
+  }
+
+
+};
+console.log(robot.info());
+
+// funciones de flecha y this. las funciones de flecha vinculan inherentemente un valor
+// this ya definido ala funcion que NO es el objeto que llama
+// en conclusion es evitar el uso de funciones de flecha cuando se usa un metodo this
+const maquina ={
+  nivelEnergia:100,
+  chequiarEnergia(){// no es recomendable usar funcion de flecha
+    console.log(`El nivel de energia esta actualmente en ${this.nivelEnergia}%`);
+  }
+} 
+
+maquina.chequiarEnergia();
+// privacidad una convencion comun es usar un guion bajo _ entes de la propiedad
+// para que no se altere la propiedad
+ let equipo ={
+   _energyLevel :100,
+   recarga(){
+     this._energyLevel+= 30;
+     console.log(`¡Rcargando! la energia esta actualmente  en ${this._energyLevel}%`);
+
+   }
+  
+ };
+equipo._energyLevel="Alto";// esto se concoce como type coertion un efecto secundario
+equipo.recarga();
+// get para obtener
+// captadores .. Getters los captadores son metods que obtienen y devuelven as propiedades
+//internas de un objeto... otra cosa a tener encuenta en los metodos getter y setter
+// es que las propiedades no pueden compartir el mismo nombre que la funcion  
+//getter y setter ..una solucion es usar un guion bajo antes del nombre de la propiedad
+const movil ={
+  _modelo:"HJK 680",
+  _nivelEnergia :100,
+  get nivelEnergia(){
+    if(this._nivelEnergia === typeof "numero" ){
+    return "Mi nivel de energia es "+this._nivelEnergia;
+    }else{
+      return "Mal funcionamiento del sistema: no se puede recuper el nivel de energia";
+    }
+  }
+};
+console.log(movil.nivelEnergia);
+
+
+// SETTERS   CAPTADORES .. establecer
+let miRobot ={
+ _modelo:"LRSCV",
+ _nivelDePoder :100 ,
+ _numeroDeSensores :15,
+ get numeroDeSensores(){
+   if(this._numeroDeSensores ===typeof"numero"){
+   return this.numeroDeSensores;
+   }else{
+     return "los sensores estan actualmente abajo."
+   }
+ },
+ set numeroDeSensores(num){
+  if( typeof num === "numero"&& num>=0){
+this._numeroDeSensores = num;
+  }else{
+    console.log("pase un numero que sea mayor o igual a 0");
+  }
+ }
+};
+miRobot.numeroDeSensores=100;
+console.log(miRobot.numeroDeSensores);
+
+
+// funciones de fabrica  ... es una funcion  que devuelve un objeto y se puede reutilizar 
+// para hacer muchas instancias de objetos .. las funciones de fabrica tambien pueden 
+//  tener parametros que nos permiten personalizar el objeto que se devuelve
+const fabricaRobot =(modelo,mobil)=>{
+  return{
+    modelo:modelo,
+    mobil:mobil,
+    pitido(){
+      console.log("Beep Boop");
+
+    }
+  }
+
+}
+const tinCan = fabricaRobot("p -500",true);
+tinCan.pitido();
+
+// taquigrafia de valor de propiedad 
+const fabricaMotos =(modelo,marca)=>{
+  return {
+    modelo,
+    marca,
+    
+      cambio(){
+      console.log("rumm, rumm"); 
+    }
+
+    }
+  }
+
+const newMoto = fabricaMotos("Yamaha",false)
+console.log(newMoto.modelo);
+console.log(newMoto.marca);
+
+// asignacion desestructurada
+const robot2 ={
+  modelo:"Chappi",
+  nivelEnergia:100,
+  funcionalidad:{
+    alarma(){
+      console.log("beep beep");
+      
+    },
+    laser(){
+      console.log("pew pew");
+
+    },
+  }
+};
+const {funcionalidad}=robot2;
+funcionalidad.alarma();
+
+// metodos de objetos incorporados
+const robot3={
+  modelo:"T-500",
+  movil:true,
+  sensible :false,
+  armadura:"chapada en acero",
+  nivelDeEnergia:75,
+};
+const robotKeys =Object.keys(robot3);
+console.log(robotKeys);
+
+// ARREGLAR ESTE CODIGO
+//const robotEntradas = Object.entradas(robot3); 
+//console.log(robotEntradas);
+
+//const newRobot =Object.asignar({laserBlaster:true,reconocimientoDeVoz:true},robot3);
+//console.log(newRobot);
+
+// CLASES
+class perro{
+  constructor(nombre){
+    this.nombre=nombre;
+    this.comportamiento =0;
+ }
+ getnombre(){
+   return this._nombre;
+
+ }
+getComportamiento(){
+  return this._comportamiento;
+}
+incrementarComportamiento(){
+  this._comportamiento++;
+}
+}
+const halley = new perro("Halley");
+console.log(halley.nombre);
+console.log(halley.comportamiento);
+//imprime en consola el comportamiento de halley
+halley.incrementarComportamiento();
+// agruega uno al comportamiento de halley
+
+console.log(halley.nombre);
+console.log(halley.comportamiento);
+
+//CONSTRUCTOR
+class cirujano{
+  constructor(nombre , departamento){
+    this.nombre=nombre;
+    this.departamento=departamento;
+    this. diasDeVacacionesRestantes=20
+    
+     }
+     // METODOS no incluir coma entre los metodos de las clases 
+getNombre(){
+  return this._nombre;
+}
+getdepartamento(){
+  return this._departamento;
+
+}
+getdiasDeVacacionesRestantes(){
+  return this._diasDeVacacionesRestantes;
+}
+tomarElDiaDeVacaciones(diaLibre){
+  return this._diasDeVacacionesRestantes -=diaLibre;
+
+}
+
+
+}
+const cirujanoDiant = new cirujano("dian","Ortopedista");
+
+
+//LLAMADAS DE METODOS
+console.log(cirujanoDiant.nombre);
+cirujanoDiant.tomarElDiaDeVacaciones(3);
+console.log(cirujanoDiant.diasDeVacacionesRestantes);
+
+// HERENCIAS
+class hospitalEmpleados{
+  constructor(nombre){
+this._nombre=nombre;
+this._diasDeVacacionesRestantes =20;
+  }
+  getNombre(){
+    return this._nombre;
+
+  }
+getdiasDeVacacionesRestantes(){
+  return this._diasDeVacacionesRestantes;
+}
+tomarElDiaDeVacaciones(diaLibre){
+  this._diasDeVacacionesRestantes-=tomarElDiaDeVacaciones;
+
+}
+}
+ //class enfermera extends  hospitalEmpleados(){   
+  //constructor(nombre,certificacion){
+   // super(nombre)
+   // this._certificacion=certificacion;
+// ARREGLAR ESTE CODIGO
+
+  //}
+//}
+// enfermeraOnilik = new enfermera(["onilik","trauma","peditria"]);
+//enfermeraOnilik.tomarElDiaDeVacaciones(5);
+//console.log(enfermeraOnilik.diasDeVacacionesRestantes);
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  
+  get name() {
+    return this._name;
+  }
+  
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+  
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+  // METODOS ESTATICOS
+  static generatePassword() {
+    return Math.floor(Math.random() * 10000);
+  }
+}
+
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = certifications;
+  } 
+  
+  get certifications() {
+    return this._certifications;
+  }
+  
+  addCertification(newCertification) {
+    this.certifications.push(newCertification);
+  }
+}
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk.remainingVacationDays);
+nurseOlynyk.addCertification('Genetics');
+console.log(nurseOlynyk.certifications);
+
+// exportar modulo
+let helicoptero ={};
+helicoptero.aeroPlano="StarJet";
+//module.exports =helicoptero; 
+
+
+// module exports
+//module.exports ={
+ //miAeronave:"ClaudJets",
+ //monitorAeroplano :function(){
+  /// return this.miAeronave;
+
+// }
+//};
+// EXPORTACACION POR DEFECTO
+let availableAirplanes = [{
+ name: 'AeroJet',
+ fuelCapacity: 800,
+ availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+}, 
+{name: 'SkyJet',
+ fuelCapacity: 500,
+ availableStaff: ['pilots', 'flightAttendants']
+}];
+
+let flightRequirements = {
+  requiredStaff: 4,
+};
+
+function meetsStaffRequirements(availableStaff, requiredStaff) {
+  if (availableStaff.length >= requiredStaff) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+
+ { availableAirplanes, flightRequirements, meetsStaffRequirements};
+let aeronaveDisponible={};
+
+//arenove.aeronaveDisponible=[{
+  //nombre:"Aerojet",
+  //fuelCapacity:800,
+//},
+//{nombre:"SkyJet",
+//fuelCapacity:500,
+
+//}];
+//exports.avion.default;
+// IMPORTAR
+//import aeroPlano from "./controlMision.js";
+//function cacpacidadCombustible(){
+  //avion.aeronaveDisponible.forEach(function (elemento){
+    //console.log("Capacidiada de combustible"+elemento.nombre+":"+elemento.cacpacidadCombustible);
+   //});
+ // };
+ // cacpacidadCombustible();
+
+ // EXPORTACIONES NOMBRADAS .. nos permiten exportar datos mediante el uso de  variables
+ 
+
+
+
+ //Programacion asincronica 
+//¿Ques es una promesa o promise? las promesas son objetos que representan en el resultado
+// final de una operacion asincronica .. un objeto promise puede estar en tres estados
+// pendiente
+//CUMPLIDO
+//RECHAZADO
+
+//construyendo un objeto prometido
+const inventario={
+gafasDeSol:1990,
+pantalones:1088,
+bolas:1344
+};
+const miEjecutor  =(resolver,rechazar)  =>{
+  if(inventario.gafasDeSol   >0){
+    resolver ("pedido de gafas procesado");
+  }else{
+    rechazar("Este articulo esta agotado");
+  }
+
+  };
+  const ordenGafasDeSol=() =>{
+    return new Promise(miEjecutor);
+  };
+  const ordenPromise= ordenGafasDeSol();
+  console.log(ordenPromise);
+  // Funcion  Node SetTimeOut()..
+  console.log("Esta es la primera linea de codigo en index.html");
+  const usingSTO=() =>{
+    console.log("Esta linea de codigo se registrara en la consola en el ultimo lugar");
+  
+  };
+  setTimeout(usingSTO,100);
+console.log("Esta es la ultima linea de codigo en index.html");
+ //const{ comprobarInventario} = require('/.libreria.js');// corregir error
+ //const orden=[["gafas de sol",1],["bolsas",2]]; 
+ //const manejarElExito=(valorResuelto) =>{
+  // console.log(valorResuelto);
+
+ //};
+ //const manejarLaFalla=(razonRechaso) =>{
+   //console.log(razonRechaso);
+ //};
+ //comprobarInventario(orden).then(manejarElExito,manejarLaFalla);
+ 
+
+ //PROGRAMACION ASINCRONA...la palabra clave asincronica.
+ //la palabra clave async se usa para manejar acciones asincronicas
+ function conConstructor(num){
+   return new Promise((resolver,rechazar)=>{
+     if(num===0){
+       resolver("Zero");
+
+     }else{
+       resolver("no Zero");
+     }
+
+   })
+
+   }
+conConstructor(0).then((valorResuelto)=>{
+  console.log(`conConstructor(0)devolvio una promesa que resolvio en :${valorResuelto}.`);
+
+});
+async function asincronica  (num){// PENDIENTE CON ESTE FUNCION: 
+  if(num===0){
+    return "Zero";
+
+  }else{
+    return "no zero"
+  }
+  // Introduccion alas solicitudes: hay muchos tipos de solicitudes HTTP.Los cuatro 
+  // tipos de solicitudes mas utilizados HTTP son GET, POST,PUST Y DELETE: utlizando
+  // el objeto XHR
+  const jsonButton = document.querySelector("#generador");
+  const botonContainer=document.querySelector("#botonContainer");
+  const display= documen.querySelector("#displayContainer");
+  const coleccion =["otro","mas","siguiente","continuar","continuar",
+"haga clik aqui","uno nuevo"];
+const generdorJson=()=>{
+const xhr=XMLHttpRequest();
+xhr .responseType="json";
+xhr.cambioDeEstilo=()=>{
+  if(xhr.estadoListo===XMLHttpRequest.DONE){
+darRespuesta(xhr.respuesta );
+cambiarBoton();
+  }
+}
+xhr.abierto("GET","https://jsonplaceholder.typicode.com/users");
+xhr.enviar();
+}
+const formatJson=(resJson) =>{
+  resJson=JSON.stringify(resJson);
+let contador=0;
+return resJson.dividir("").map(char =>{
+  switch(char){
+   case ",":
+     return `,\n${  " ".repetir (contador*2)}`;
+     case "{":contador=+1;
+     return`\n${  " ".repetir(contador*2)}`;
+     case "}": contador=-1;
+     return`\n${" ".repetir(contador*2)}}`;
+     default:
+     return char;
+    
+   
+    }
+  
+})
+.join(" ");
+}
+}          
+
+const darRespuesta=(jsonRespuesta)=> {
+  const jsonSeleccion= Math.floor(Math.random()*10);
+  display.innerHTML=`<pre>${formatJson(jsonRespuesta[jsonSeleccion])}</pre>`;
+}
+
+const cambiarBoton=()=>{
+  const nuevoTexto=Math.floor(Math.random()*7);
+  jsonButton.innerHTML`${coleccion[nuevoTexto]}!`;
+}
+
+//jsonButton.addEventListener("click",generdorJson);
+
+
+// SOLICITUDES O REQUEST HTTP.. javaScript usa un bucle de evnetos para manejar llamadas de funcion
+//asincronicas exploraremos un sistema de tecnologias llamado AJAX
+console.log("Primer mensaje");
+setTimeout (()=>{
+  console.log("Este mensaje siempre sera ejecutado al final...");
+
+},2500);
+console.log("Segundo mensaje");
+
+//REQUEST XHR GET I .. asynchronous javaScript and XML (AJAX).. permite realizar 
+// solicitudes despues de la carga de la pagina .. recuerda usamos GET  para 
+// recuperar datos de una fuente
+
+
+
+// solicitud XHR GET II..
+ const xhr= new XMLHttpRequest();
+ const url ="https://api-to-call.com/endpoint";
+ xhr.responseType="json";
+ xhr.onreadystatechange=()=>{
+   if(xhr.readyState===XMLHttpRequest.DONE){
+    return xhr.response;
+
+   }
+
+   
+ }
+xhr.open(GET,url);
+xhr.send();
+
+//SOLICITUD XHR GET III..
+
+// informacion para llegar ala API
+const url = 'https://api.datamuse.com/words?';
+const queryParams = 'rel_rhy=';
+const queryParams ="rel_jjb=";
+const additionaParams="y temas=";
+
+// seleccionar elementos de pagina
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// funcion AJAX
+const getSuggestions = () => {
+  const wordQuery = inputField.value;
+  const topicQuery = topicFiel.value;
+  const endpoint = `${url}${queryParams}${wordQuery}${additionaParams}${topicQuery}`;
+  
+  const xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      renderResponse(xhr.response);
+    }
+  }
+  
+  xhr.open('GET', endpoint);
+  xhr.send();
+}
+
+// borrar resultados anteriores y mostrar resultados de la pagina web
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+}
+
+submit.addEventListener('click', displaySuggestions);
+//REQUESTS XHR GET 4 .. una cadena de consulta se separa de la URL mediante
+// signo de interrogacion (?) despues puede crear un parametro
+// si desea agregar un parametro mas deberas usar (&)
+
+
+// REQUESTS XHR POST II
+const xhr =new XMLHttpRequest();
+const url = "https://api-to-call.com/endpoint'",
+const data = JSON.stringify({id:"200"});
+xhr.responseType="json";
+xhr.onreadystatechange=()=> {
+  if(responseType===XMLHttpRequest.DONE){
+  return xhr.response;
+
+  }
+}
+xhr.response("POST",url);
+xhr.send(data);
+
+// REQUEST XHR POS III
+const apiKey = "1ace0b2898504e1fb3dbc1c544e79179";
+const url ="https://api.rebrandly.com/v1/links";
+const inputField=document.querySelector("#input");
+const shortenButton=document.querySelector("#shorten");
+const responseField=document.querySelector("#resposeFiled");
+
+
+const shortenUrl=()=>{
+  const urlToShorten= inputField.value;
+  const data=JSON.stringify({destination:urlToShorten});
+  
+  const xhr= new XMLHttpRequest();
+  xhr.responseType ="json";
+  const onreadystatechange=()=>{
+    if(xhr.readyState===XMLHttpRequest.DONE){
+    renderResponse(xhr.response);
+
+    }
+  }
+  xhr.open("POST",url);
+xhr.setRequestHeader("consten-type","application/json");
+xhr.setRequestHeader("apiKey",apikey);
+xhr.open.send(data);
+
+}
+const displayShoetUrl=(event)=>{
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+}
+shortenUrl();
+}
+shortenButton.addEventListener("click",displayShoetUrl);
+
+// Itroduccion a las solicitudes con ES6..para facilitar el manejo de eventos 
+// asicronicos se introdujeron promesas promise en javascript en ES6
+
+// solicitudes fetch()..GET I  la funcion fetch() crea un obejto de solicitud 
+// que contiene informacion relevante que necesita una API
+
+
+// devuelve una promesa que finalmente se resuleve en objeto de respuesta
+
+// REQUESTS FETCH GET II
+fetch('https://api-to-call.com/endpoint').then(response => {
+  if (response.ok) {
+    return response.json();
+  }
+  throw new Error('Request failed!');
+}, networkError => {
+  console.log(networkError.message);
+}).then(jsonResponse => {
+  return jsonResponse;
+});
+
+// solicitud fetchc GET II
+// Informacion para llegar ala API
+const url = 'https://api.datamuse.com/words';
+const queryParams = '?sl=';
+
+// Selecciona elemntos en la pagina
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX funcion
+const getSuggestions = () => {
+  const wordQuery = inputField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+  
+  fetch(endpoint, {cache: 'no-cache'}).then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed!');
+  }, networkError => {
+    console.log(networkError.message)
+  }).then(jsonResponse=>{
+    renderResponse(jsonResponse);
+  })
+}
+// borra resultados anteriores y muestra resultados en la pagina web
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+};
+
+submit.addEventListener('click', displaySuggestions);
+
+// solicitud fetch() POST II
+fetch('https://api-to-call.com/endpoint', {
+  method: 'POST',
+  body: JSON.stringify({id: "200"})
+}).then(response => {
+  if(response.ok){
+	  return response.json();  
+  }
+	throw new Error('Request failed!');
+}, networkError => {
+  console.log(networkError.message);
+}).then(jsonResponse => {
+  console.log(jsonResponse);
+})
+
+// fetch publicar solicitudes III
+// Informaccion para llegar ala API
+const apiKey = '<Your API Key>';
+const url = 'https://api.rebrandly.com/v1/links';
+
+// Some page elements
+const inputField = document.querySelector('#input');
+const shortenButton = document.querySelector('#shorten');
+const responseField = document.querySelector('#responseField');
+
+// AJAX functions
+const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten})
+  
+	fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+      'apikey': apiKey
+    },
+    body: data
+  })
+}
+
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild)
+  }
+  shortenUrl();
+}
+
+shortenButton.addEventListener('click', displayShortUrl);
+
+
+
+
+
+
+
+    </script>
+
+
+    
+ 
+ 
+
+ 
+ 
+
+ <head>
+  
+
+    </div>
+      
+    
+    
+    
+
+
+      
+
+      
+      
+      
+    
+  </body>
+</html>
